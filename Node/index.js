@@ -38,3 +38,46 @@
 // const { readFileSync, read } = require("fs");
 // const a = readFileSync("sample.txt", "utf-8");
 // console.log(a);
+
+// const fs = require("fs");
+// async
+// const a = "try to learn node";
+// fs.writeFile("sample1.txt", a, () => {
+//   console.log("done");
+// });
+// previous value  get updated
+// const b = "did it , try ones agin";
+// fs.writeFile("sample1.txt", b, () => {
+//   console.log("done ones again");
+// });
+
+// sync
+// a = "print this messaege";
+// fs.writeFileSync("sample1.txt", a);
+
+// const pokemon = require("pokemon");
+// console.log(pokemon.all());
+// console.log(pokemon.random());
+
+// build in  module path , os , file , http => cover
+
+/* ---------------------------   create a  server -------------------------- */
+
+const http = require("http");
+const fs = require("fs");
+const home = fs.readFileSync("./index.html");
+const port = 400;
+const hostname = "localhost";
+const server = http.createServer((req, res) => {
+  if (req.url === "/") {
+    return res.end(home);
+  } else if (req.url === "/about") {
+    return res.end(" show about page ");
+  } else {
+    return res.end("page not  found");
+  }
+});
+
+server.listen(port, hostname, () => {
+  console.log("server is  working");
+});
