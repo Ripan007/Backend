@@ -89,7 +89,8 @@
 /* -------------------------------------------------------------------------- */
 /*                                core  modules                               */
 /* -------------------------------------------------------------------------- */
-const os = require("os");
+// const os = require("os");
+const fs = require("fs");
 // if (os.platform() == "win32") {
 //   console.log("windows");
 // }
@@ -99,3 +100,9 @@ const os = require("os");
 // });
 
 // console.log(os.freemem());
+fs.mkdir("test13", (error) => {
+  if (error) return error;
+  else {
+    console.log("created");
+  }
+});
