@@ -24,4 +24,5 @@
 5. type of system ?
 - data intensive application 
 - compute intensive appication  
-![](image.png)
+---
+![node js runtime](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F1*rWGbyCbcJTKI-m3ZEDhCaA.png&f=1&nofb=1&ipt=fc778243ff89cad9c73b210dfa8ae1ce84110cb0109615725047b95e01dacea4&ipo=images)
