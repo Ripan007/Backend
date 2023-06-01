@@ -101,9 +101,12 @@ const fs = require("fs");
 
 // console.log(os.freemem());
 // file system module
-fs.mkdir("test13", (error) => {
-  if (error) return error;
-  else {
-    console.log("created");
-  }
-});
+// fs.mkdir("test13", (error) => {
+//   if (error) return error;
+//   else {
+//     console.log("created");
+//   }
+// });
+fs,mkdir('test123').then(){
+  
+}
