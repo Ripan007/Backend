@@ -122,3 +122,5 @@ fs.writeFile("test/test.txt", "hello")
   .catch((error) => {
     console.log(error);
   });
+
+fs.appendFile("text/test.txt ", "many more line of text");
