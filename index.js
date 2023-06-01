@@ -90,7 +90,7 @@
 /*                                core  modules                               */
 /* -------------------------------------------------------------------------- */
 // const os = require("os");
-const fs = require("fs");
+const fs = require("fs").promises;
 // if (os.platform() == "win32") {
 //   console.log("windows");
 // }
@@ -107,6 +107,10 @@ const fs = require("fs");
 //     console.log("created");
 //   }
 // });
-fs,mkdir('test123').then(){
-  
-}
+fs.mkdir("test123")
+  .then(() => {
+    console.log("file created");
+  })
+  .then((error) => {
+    console.log("error");
+  });
