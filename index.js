@@ -114,3 +114,11 @@ fs.mkdir("test")
   .catch((error) => {
     console.log(error);
   });
+
+fs.writeFile("test/test.txt", "hello")
+  .then(() => {
+    console.log("file created");
+  })
+  .catch((error) => {
+    console.log(error);
+  });
