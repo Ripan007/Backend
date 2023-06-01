@@ -6,4 +6,4 @@
 
 3. why there is a need for run time environment ?
  > v8 engine fetch  + utilities => v8 engine directly communicate directly with operating system
-
+> run
