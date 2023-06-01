@@ -107,7 +107,7 @@ const fs = require("fs").promises;
 //     console.log("created");
 //   }
 // });
-fs.mkdir("test123")
+fs.mkdir("test")
   .then(() => {
     console.log("file created");
   })
