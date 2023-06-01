@@ -94,6 +94,8 @@ const os = require("os");
 //   console.log("windows");
 // }
 
-os.cpus().forEach((cpu, index) => {
-  console.log(`cpu:${index}:${cpu.model}`);
-});
+// os.cpus().forEach((cpu, index) => {
+//   console.log(`cpu:${index}:${cpu.model}`);
+// });
+
+// console.log(os.freemem());
