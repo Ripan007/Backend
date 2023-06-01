@@ -24,3 +24,4 @@
 5. type of system ?
 - data intensive application 
 - compute intensive appication  
+![](image.png)
