@@ -90,6 +90,10 @@
 /*                                core  modules                               */
 /* -------------------------------------------------------------------------- */
 const os = require("os");
-if (os.platform() == "win32") {
-  console.log("windows");
-}
+// if (os.platform() == "win32") {
+//   console.log("windows");
+// }
+
+os.cpus().forEach((cpu, index) => {
+  console.log(`cpu:${index}:${cpu.model}`);
+});
