@@ -90,7 +90,6 @@
 /*                                core  modules                               */
 /* -------------------------------------------------------------------------- */
 // const os = require("os");
-const fs = require("fs").promises;
 // if (os.platform() == "win32") {
 //   console.log("windows");
 // }
@@ -107,20 +106,20 @@ const fs = require("fs").promises;
 //     console.log("created");
 //   }
 // });
-fs.mkdir("test")
-  .then(() => {
-    console.log("file created");
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// fs.mkdir("test")
+//   .then(() => {
+//     console.log("file created");
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
 
-fs.writeFile("test/test.txt", "hello")
-  .then(() => {
-    console.log("file created");
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// fs.writeFile("test/test.txt", "hello")
+//   .then(() => {
+//     console.log("file created");
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
 
-fs.appendFile("text/test.txt ", "many more line of text");
+// fs.appendFile("test/test.txt ", "many more line of text");
