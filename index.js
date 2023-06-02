@@ -123,3 +123,6 @@
 //   });
 
 // fs.appendFile("test/test.txt ", "many more line of text");
+
+import sum from "./index.js";
+console.log(sum(3, 5));
