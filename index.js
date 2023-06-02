@@ -128,5 +128,5 @@
 /*                                   module                                   */
 /* -------------------------------------------------------------------------- */
 
-import { addToCart } from "./test";
+import { addToCart } from "./test.js";
 addToCart("jjj", 3);
