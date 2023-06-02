@@ -124,5 +124,5 @@
 
 // fs.appendFile("test/test.txt ", "many more line of text");
 
-import sum from "./index.js";
-console.log(sum(3, 5));
+import add from "./test.js";
+console.log(add(3, 5));
