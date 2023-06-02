@@ -123,3 +123,6 @@
 //   });
 
 // fs.appendFile("test/test.txt ", "many more line of text");
+
+import { add } from "./test.js";
+console.log(add(4, 5));
