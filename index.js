@@ -123,3 +123,5 @@
 //   });
 
 // fs.appendFile("test/test.txt ", "many more line of text");
+
+console.log("welcome");
