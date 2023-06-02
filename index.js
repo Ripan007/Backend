@@ -124,7 +124,4 @@
 
 // fs.appendFile("test/test.txt ", "many more line of text");
 
-function add(a, b) {
-  return a + b;
-}
-exports.add = add;
+console.log("welcome");
