@@ -134,4 +134,13 @@ const shoppingCart = function () {
     cart.push({ product, quantity });
     console.log(`${quantity} ${product} added to the cart`);
   };
+  const stock = function () {
+    console.log(`${quantity} ${product} are  in stock`);
+  };
+  return {
+    addCart,
+    stock,
+    cart,
+  };
 };
+shoppingCart.addCart("shirt", 88);
