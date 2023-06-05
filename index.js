@@ -141,5 +141,3 @@ fs,
     if (err) throw err;
     console.log(data);
   });
-
-  package manager 
