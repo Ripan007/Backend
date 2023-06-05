@@ -147,7 +147,8 @@ import inquirer from "inquirer";
 inquirer
   .prompt([{ message: "type in your URL: ", name: "URL" }])
   .then((answers) => {
-    console.log(answers);
+    // console.log(answers);
+    const url = answers.URL;
   })
   .catch((error) => {
     if (error.isTtyError) {
