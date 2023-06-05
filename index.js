@@ -128,7 +128,7 @@
 /*                                   module                                   */
 /* -------------------------------------------------------------------------- */
 
-import { fs } from "fs";
+import fs from "fs";
 fs.writeFile("message.txt", "hello", (err) => {
   if (err) throw err;
   console.log("the file has executed");
