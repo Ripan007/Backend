@@ -129,4 +129,6 @@
 /* -------------------------------------------------------------------------- */
 
 const path = require("node:path");
-path.basename("");
+const result = path.basename("C:UsersRipanOneDriveDesktopBackendindex.js");
+
+console.log(result);
