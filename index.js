@@ -129,9 +129,13 @@
 /* -------------------------------------------------------------------------- */
 
 import fs, { readFile } from "fs";
-fs.writeFile("message.txt", "hello", (err) => {
+fs.writeFile("message.txt", "welcome to the node ", (err) => {
   if (err) throw err;
   console.log("the file has executed");
 });
 
-fs, readFile("message.txt", utf8);
+fs,
+  readFile("message.txt", "utf8", (err, data) => {
+    if (err) throw err;
+    console.log(data);
+  });
