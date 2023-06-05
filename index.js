@@ -127,8 +127,3 @@
 /* -------------------------------------------------------------------------- */
 /*                                   module                                   */
 /* -------------------------------------------------------------------------- */
-
-const path = require("node:path");
-const result = path.basename("C:UsersRipanOneDriveDesktopBackendindex.js");
-
-console.log(result);
