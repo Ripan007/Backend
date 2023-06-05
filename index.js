@@ -145,9 +145,7 @@
 import inquirer from "inquirer";
 
 inquirer
-  .prompt([
-    /* Pass your questions in here */
-  ])
+  .prompt([{ message: "type in your url " }])
   .then((answers) => {
     // Use user feedback for... whatever!!
   })
