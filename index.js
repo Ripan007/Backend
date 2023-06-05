@@ -127,12 +127,14 @@
 /* -------------------------------------------------------------------------- */
 /*                                   module                                   */
 /* -------------------------------------------------------------------------- */
-
+// create  file
 import fs, { readFile } from "fs";
 fs.writeFile("message.txt", "welcome to the node ", (err) => {
   if (err) throw err;
   console.log("the file has executed");
 });
+
+// read file
 
 fs,
   readFile("message.txt", "utf8", (err, data) => {
