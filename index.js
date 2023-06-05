@@ -128,8 +128,10 @@
 /*                                   module                                   */
 /* -------------------------------------------------------------------------- */
 
-import fs from "fs";
+import fs, { readFile } from "fs";
 fs.writeFile("message.txt", "hello", (err) => {
   if (err) throw err;
   console.log("the file has executed");
 });
+
+fs, readFile("message.txt", utf8);
