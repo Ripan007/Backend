@@ -17,6 +17,8 @@
 //   console.log("server is working");
 // });
 
+/* --------------------------------- module --------------------------------- */
+
 // import name from "./feature.js";
 // import { name2, name3 } from "./feature.js";
 // import name, { name2, name3 } from "./feature.js";
@@ -31,7 +33,11 @@
 // console.log(myName);
 // import { name } from "./feature.js";
 // console.log(name);
+
+// import { sum } from "./feature.js";
+// console.log(sum(2, 2));
 // ? terminology to remember
+
 // server
 // api
 // database
