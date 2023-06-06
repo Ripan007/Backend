@@ -1,8 +1,10 @@
 import express from "express";
+import path from "path";
 const app = express();
 app.get("/", (req, res) => {
-  res.send("home page");
-  //   res.sendFile("./index.html");
+  //   res.send("home page");
+  console.log(path.resolve());
+  res.sendFile("./index.html");
 });
 app.listen(1000, () => {
   console.log("server executed");
