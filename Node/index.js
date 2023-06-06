@@ -38,6 +38,9 @@
 
 // import { sum } from "./feature.js";
 // console.log(sum(2, 2));
+
+import { performancePercentage } from "./feature.js";
+console.log(performancePercentage());
 /* ------------------------------- module end ------------------------------- */
 // ? terminology to remember
 
