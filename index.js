@@ -178,4 +178,5 @@
 //   console.log("server is running");
 // });
 
-console.log(__dirname);
+import path from "path";
+console.log(path.dirname("C:UsersRipanOneDriveDesktopBackendindex.js"));
