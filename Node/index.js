@@ -8,8 +8,6 @@ import fs from "fs";
 //   console.log(data);
 // });
 
-console.log(`home output ${home}`);
-
 import { performancePercentage } from "./feature.js";
 
 const server = http.createServer((req, res) => {
@@ -22,11 +20,9 @@ const server = http.createServer((req, res) => {
       ` <p> the performancePervcentage is ${performancePercentage()}<p/> `
     );
   } else if (req.url === "/contact") {
-    res.end(
-      fs.readFile("./index.html", (err, data) => {
-        console.log(data);
-      })
-    );
+    fs.readFile("./index.html", (err, data) => {
+      res.end(data);
+    });
   } else {
     res.end(" <h1> no  page found <h1/>  ");
   }
