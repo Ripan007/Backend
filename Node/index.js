@@ -60,5 +60,6 @@ server.listen(1000, () => {
 // database
 // routing
 // module => build in module , third party module , file based module
+// inbuild module(core modules) => path , http ,file system(fs),os
 //  way of import/ export => commonjs / module (prefer module type)
 // run time environment
