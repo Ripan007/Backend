@@ -5,7 +5,7 @@ app.get("/", (req, res) => {
   //   res.send("home page");
   //   console.log(path.resolve());
   const pathLocation = path.resolve();
-  console.log(pathLocation.join(__dirname + "./index.html"));
+  console.log(pathLocation);
   //   res.sendFile("./index.html");
 });
 app.listen(1000, () => {
