@@ -4,14 +4,12 @@
 import http from "http";
 import { performancePercentage } from "./feature.js";
 const server = http.createServer((req, res) => {
-  res.end("welcome to the home page");
-  console.log(req.url);
   if (req.url === "/") {
     res.end(
       `<h1> the performancePercentage is ${performancePercentage()}<h1/>  `
     );
   } else if (req.url === "/about") {
-    res.end("about page");
+    res.end(`the performancePervcentage is ${performancePercentage}`);
   } else if (req.url === "/contact") {
     res.end(" <h1> contact page <h1/>  ");
   } else {
