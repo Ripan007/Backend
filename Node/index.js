@@ -16,8 +16,11 @@
 // server.listen(1000, () => {
 //   console.log("server is working");
 // });
+
 import name from "./feature.js";
-console.log(name);
+import { name2, name3 } from "./feature.js";
+console.log("defaut", name);
+console.log("name based", name2, name3);
 // ? terminology to remember
 // server
 // api
