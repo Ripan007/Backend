@@ -166,11 +166,14 @@
 //     }
 //   });
 
-import express from "express";
-const app = express();
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
-});
-app.listen(1000, () => {
-  console.log("server is running");
-});
+// import express from "express";
+// const app = express();
+// app.get("/", (req, res) => {
+//   res.sendFile(__dirname + "/index.html");
+// });
+// app.listen(1000, () => {
+//   console.log("server is running");
+// });
+
+import path from "path";
+console.log(path.dirname("C:UsersRipanOneDriveDesktopBackendindex.js"));
