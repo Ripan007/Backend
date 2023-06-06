@@ -23,6 +23,6 @@ console.log(name);
 // api
 // database
 // routing
-// module
+// module => build in module , third party module , file based module
 //  way of import/ export => commonjs / module (prefer module type)
 // run time environment
