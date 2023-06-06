@@ -3,7 +3,8 @@
 // const http = require("http");
 import http from "http";
 import fs from "fs";
-
+const home = fs.readFileSync("./index.html", "utf-8");
+console.log(home);
 import { performancePercentage } from "./feature.js";
 const server = http.createServer((req, res) => {
   if (req.url === "/") {
@@ -15,7 +16,7 @@ const server = http.createServer((req, res) => {
       ` <p> the performancePervcentage is ${performancePercentage()}<p/> `
     );
   } else if (req.url === "/contact") {
-    res.end(" <h1> contact page <h1/>  ");
+    res.end(home);
   } else {
     res.end(" <h1> no  page found <h1/>  ");
   }
