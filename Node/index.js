@@ -3,7 +3,7 @@
 // const http = require("http");
 import http from "http";
 import fs from "fs";
-const home = fs.readFileSync("./index.html", "utf-8");
+const home = fs.readFileSync("./index.html");
 console.log(home);
 import { performancePercentage } from "./feature.js";
 const server = http.createServer((req, res) => {
