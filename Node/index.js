@@ -2,6 +2,8 @@
 // ? creation  of server , routing
 // const http = require("http");
 import http from "http";
+import fs from "fs";
+
 import { performancePercentage } from "./feature.js";
 const server = http.createServer((req, res) => {
   if (req.url === "/") {
