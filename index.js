@@ -166,17 +166,15 @@
 //     }
 //   });
 
-// import express from "express";
-// const app = express();
-// app.get("/", (req, res) => {
-//   res.send("home page");
-// });
-// app.get("/about", (req, res) => {
-//   res.send("about page");
-// });
-// app.listen(1000, () => {
-//   console.log("server is running");
-// });
-
-import fs from "fs";
-console.log(fs);
+import express from "express";
+const app = express();
+app.get("/", (req, res) => {
+  //   res.send("home page");
+  console.log("show directory name", __dirname);
+});
+app.get("/about", (req, res) => {
+  res.send("about page");
+});
+app.listen(1000, () => {
+  console.log("server is running");
+});
