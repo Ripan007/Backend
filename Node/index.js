@@ -4,9 +4,9 @@
 import http from "http";
 import fs from "fs";
 // const home = fs.readFileSync("./index.html");
-const home = fs.readFile("./index.html", (err, data) => {
-  console.log(data);
-});
+// const home = fs.readFile("./index.html", (err, data) => {
+//   console.log(data);
+// });
 
 console.log(`home output ${home}`);
 
@@ -22,7 +22,11 @@ const server = http.createServer((req, res) => {
       ` <p> the performancePervcentage is ${performancePercentage()}<p/> `
     );
   } else if (req.url === "/contact") {
-    res.end(home);
+    res.end(
+      fs.readFile("./index.html", (err, data) => {
+        console.log(data);
+      })
+    );
   } else {
     res.end(" <h1> no  page found <h1/>  ");
   }
