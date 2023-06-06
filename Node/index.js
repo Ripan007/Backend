@@ -27,6 +27,10 @@
 // console.log(allName.default);
 // console.log(allName.name2);
 // console.log(allName.name3);
+// import myName from "./feature.js";
+// console.log(myName);
+// import { name } from "./feature.js";
+// console.log(name);
 // ? terminology to remember
 // server
 // api
