@@ -168,6 +168,9 @@
 
 import express from "express";
 const app = express();
+app.get("/", (req, res) => {
+  res.send("home page");
+});
 app.listen(1000, () => {
   console.log("server is running");
 });
