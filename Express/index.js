@@ -3,7 +3,9 @@ import path from "path";
 const app = express();
 app.get("/", (req, res) => {
   //   res.send("home page");
-  console.log(path.resolve());
+  //   console.log(path.resolve());
+  const pathLocation = path.resolve();
+  console.log(pathLocation.join(__dirname + "./index.html"));
   //   res.sendFile("./index.html");
 });
 app.listen(1000, () => {
