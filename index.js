@@ -169,7 +169,7 @@
 import express from "express";
 const app = express();
 app.get("/", (req, res) => {
-  console.log("welcome");
+  res.sendFile("/index.html");
 });
 app.listen(1000, () => {
   console.log("server is running");
