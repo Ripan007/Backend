@@ -6,6 +6,8 @@ app.get("/", (req, res) => {
   //   console.log(path.resolve());
   const pathLocation = path.resolve();
   console.log(pathLocation);
+  console.log(path.join(pathLocation, "hello"));
+  console.log(path.join(pathLocation, "./index.html"));
   //   res.sendFile("./index.html");
 });
 app.listen(1000, () => {
