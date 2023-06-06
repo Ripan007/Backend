@@ -169,7 +169,7 @@
 import express from "express";
 const app = express();
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "index.html");
+  res.sendFile(/Users/Ripan/OneDrive/Desktop/Backend/Express/index.js + "index.html");
 });
 app.listen(1000, () => {
   console.log("server is running");
