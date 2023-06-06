@@ -2,6 +2,7 @@ import express from "express";
 const app = express();
 app.get("/", (req, res) => {
   res.send("home page");
+  //   res.sendFile("./index.html");
 });
 app.listen(1000, () => {
   console.log("server executed");
