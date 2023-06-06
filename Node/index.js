@@ -17,10 +17,16 @@
 //   console.log("server is working");
 // });
 
-import name from "./feature.js";
-import { name2, name3 } from "./feature.js";
-console.log("defaut", name);
-console.log("name based", name2, name3);
+// import name from "./feature.js";
+// import { name2, name3 } from "./feature.js";
+// import name, { name2, name3 } from "./feature.js";
+// console.log("accessing", name, name2, name3);
+// console.log("defaut", name);
+// console.log("name based", name2, name3);
+// import * as allName from "./feature.js";
+// console.log(allName.default);
+// console.log(allName.name2);
+// console.log(allName.name3);
 // ? terminology to remember
 // server
 // api
