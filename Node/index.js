@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
     res.end(" <h1>home page <h1/>  ");
   } else if (req.url === "/about") {
     res.end(
-      `<h1> the performancePercentage is ${performancePercentage}<h1/>  `
+      `<h1> the performancePercentage is ${performancePercentage()}<h1/>  `
     );
   } else if (req.url === "/contact") {
     res.end(" <h1> contact page <h1/>  ");
