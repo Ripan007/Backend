@@ -11,6 +11,7 @@ import fs from "fs";
 import { performancePercentage } from "./feature.js";
 
 const server = http.createServer((req, res) => {
+  console.log(req.method);
   if (req.url === "/") {
     res.end(
       `<h1> the performancePercentage is ${performancePercentage()}<h1/>  `
