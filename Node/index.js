@@ -23,4 +23,5 @@ server.listen(1000, () => {
 // database
 // routing
 // module
+//  way of import/ export => commonjs / module (prefer module type)
 // run time environment
