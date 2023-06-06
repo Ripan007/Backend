@@ -169,8 +169,7 @@
 import express from "express";
 const app = express();
 app.get("/", (req, res) => {
-  //   res.send("home page");
-  console.log("show directory name", __dirname);
+  console.log(__dirname);
 });
 app.get("/about", (req, res) => {
   res.send("about page");
