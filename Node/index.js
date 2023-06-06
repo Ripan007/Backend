@@ -3,9 +3,15 @@
 // const http = require("http");
 import http from "http";
 import fs from "fs";
-const home = fs.readFileSync("./index.html");
-console.log(home);
+// const home = fs.readFileSync("./index.html");
+const home = fs.readFile("./index.html", (err, data) => {
+  console.log(data);
+});
+
+console.log(`home output ${home}`);
+
 import { performancePercentage } from "./feature.js";
+
 const server = http.createServer((req, res) => {
   if (req.url === "/") {
     res.end(
