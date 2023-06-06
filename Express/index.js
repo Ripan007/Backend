@@ -9,6 +9,7 @@ app.get("/", (req, res) => {
   console.log(path.join(pathLocation, "hello"));
   console.log(path.join(pathLocation, "./index.html"));
   //   res.sendFile("./index.html");
+  res.sendFile(path.join(pathLocation, "./index.html"));
 });
 app.listen(1000, () => {
   console.log("server executed");
