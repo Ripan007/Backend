@@ -13,4 +13,4 @@ app.listen(1000, () => {
 // routing is easy
 // split the  code
 // less code
-// javascript tempalating engines
+// javascript tempalating engines => A templating engine is a way for developers to interpole strings effectively
