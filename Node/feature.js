@@ -8,7 +8,7 @@
 // };
 
 export const performancePercentage = () => {
-  return Math.trunc(Math.random() * 100);
+  return `${Math.trunc(Math.random() * 100)}%`;
 };
 // export { name2, name3 };
 // export default name;
