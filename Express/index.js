@@ -165,15 +165,3 @@
 // Something else went wrong
 //     }
 //   });
-
-const express = require("express");
-const app = express();
-
-app.get("/", (req, res) => {
-  res.send("welcome to the home page");
-  res.sendFile(__dirname + "/index.html");
-});
-
-app.listen(1000, () => {
-  console.log("server is  running");
-});
