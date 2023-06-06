@@ -1,1 +1,1 @@
-console.log("welcome  to expresss");
+// ? why express ? instead of node js to create server
