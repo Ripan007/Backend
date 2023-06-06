@@ -165,12 +165,3 @@
 // Something else went wrong
 //     }
 //   });
-
-import express from "express";
-const app = express();
-app.get("/", (req, res) => {
-  res.sendFile(/Users/Ripan/OneDrive/Desktop/Backend/Express/index.js + "index.html");
-});
-app.listen(1000, () => {
-  console.log("server is running");
-});
