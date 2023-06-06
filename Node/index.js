@@ -16,3 +16,11 @@ const server = http.createServer((req, res) => {
 server.listen(1000, () => {
   console.log("server is working");
 });
+
+// ? terminology to remember
+// server
+// api
+// database
+// routing
+// module
+// run time environment
