@@ -16,7 +16,7 @@
 // server.listen(1000, () => {
 //   console.log("server is working");
 // });
-const name = require("./feature.js");
+import name from "./feature.js";
 console.log(name);
 // ? terminology to remember
 // server
