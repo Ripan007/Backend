@@ -2,13 +2,7 @@ import express from "express";
 import path from "path";
 const app = express();
 app.get("/", (req, res) => {
-  //   res.send("home page");
-  //   console.log(path.resolve());
   const pathLocation = path.resolve();
-  console.log(pathLocation);
-  console.log(path.join(pathLocation, "hello"));
-  console.log(path.join(pathLocation, "./index.html"));
-  //   res.sendFile("./index.html");
   res.sendFile(path.join(pathLocation, "./index.html"));
 });
 app.listen(1000, () => {
