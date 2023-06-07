@@ -1,11 +1,4 @@
-import express from "express";
-// setting up view engine
-app.set("view engine", "ejs");
-const app = express();
-app.get("/", (req, res) => {});
-app.listen(1000, () => {
-  console.log("server executed");
-});
+console.log("welcome");
 
 // ? why express ? instead of node js to create server
 // node js framework
