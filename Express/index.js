@@ -13,7 +13,7 @@ const app = express();
 //   console.log("server is running");
 // });
 
-/* -------------------------------- with ejs -------------------------------- */
+/* -------------------------------- with ejs => Embedded JavaScript templating. -------------------------------- */
 app.get("/", (req, res) => {});
 
 // ? why express ? instead of node js to create server
