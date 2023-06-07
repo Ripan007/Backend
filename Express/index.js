@@ -3,7 +3,9 @@ import path from "path";
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("welcome");
+  const pathLocation = path.resolve();
+  console.log(pathLocation, "index.html");
+  res.sendFile(path.join(pathLocation, "index.html"));
 });
 app.listen(2000, () => {
   console.log("server is running");
