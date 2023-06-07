@@ -1,5 +1,13 @@
-console.log("welcome");
+import express from "express";
+import path from "path";
+const app = express();
 
+app.get("/", (req, res) => {
+  res.send("welcome");
+});
+app.listen(2000, () => {
+  console.log("server is running");
+});
 // ? why express ? instead of node js to create server
 // node js framework
 // more  syntactical manner
