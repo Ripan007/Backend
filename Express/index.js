@@ -1,9 +1,9 @@
 import express from "express";
-import path from "path";
+// setting up view engine
+app.set("view engine", "ejs");
 const app = express();
 app.get("/", (req, res) => {
-  const pathLocation = path.resolve();
-  res.sendFile(path.join(pathLocation, "./index.html"));
+  res.render("index");
 });
 app.listen(1000, () => {
   console.log("server executed");
