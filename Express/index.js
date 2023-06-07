@@ -9,14 +9,17 @@ const app = express();
 //   console.log(pathLocation, "index.html");
 //   res.sendFile(path.join(pathLocation, "index.html"));
 // });
-// app.listen(2000, () => {
-//   console.log("server is running");
-// });
 
 /* -------------------------------- with ejs => Embedded JavaScript templating.
 lets you generate HTML markup with plain JavaScript
  -------------------------------- */
-app.get("/", (req, res) => {});
+app.set("views engine", "ejs");
+app.get("/", (req, res) => {
+  res.render("index");
+});
+app.listen(2000, () => {
+  console.log("server is running");
+});
 
 // ? why express ? instead of node js to create server
 // node js framework
