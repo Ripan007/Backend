@@ -13,7 +13,9 @@ const app = express();
 //   console.log("server is running");
 // });
 
-/* -------------------------------- with ejs => Embedded JavaScript templating. -------------------------------- */
+/* -------------------------------- with ejs => Embedded JavaScript templating.
+lets you generate HTML markup with plain JavaScript
+ -------------------------------- */
 app.get("/", (req, res) => {});
 
 // ? why express ? instead of node js to create server
