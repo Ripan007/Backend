@@ -25,4 +25,5 @@ console.log(sillyname)
 **/
 
 import superheroes from 'superheroes'
-console.log(superheroes)
+const me = superheroes[0]
+console.log(` i am ${me}`)
