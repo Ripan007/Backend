@@ -8,8 +8,9 @@ fs.writeFile('message.txt', 'hello node js', (err) => {
 })
 
 // read file
+// in case of string buffer is created - resolve => utf8
 
-fs.readFile('./message.txt', (err, data) => {
+fs.readFile('./message.txt', 'utf8', (err, data) => {
   if (err) throw err
-  console.log(data)
+  console.log(`show the data : ${data}`)
 })
