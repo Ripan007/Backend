@@ -48,6 +48,10 @@ inquirer
     const url = answers.URL
     var qr_svg = qr.image(url)
     qr_svg.pipe(fs.createWriteStream('qr_img.png'))
+    fs.writeFile('URL.txt', url, (err) => {
+      if (err) throw err
+      console.log('the  file has been saved')
+    })
 
     // Use user feedback for... whatever!!
   })
