@@ -14,5 +14,3 @@ fs.readFile('./message.txt', 'utf8', (err, data) => {
   if (err) throw err
   console.log(`show the data : ${data}`)
 })
-
-//  what i want  to achieve for tha
