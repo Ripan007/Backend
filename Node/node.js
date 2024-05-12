@@ -24,6 +24,8 @@ console.log(sillyname)
 
 **/
 
-import superheroes from 'superheroes'
+// import superheroes from 'superheroes'
+import { randomSuperhero } from 'superheroes'
+
 const me = superheroes[0]
 console.log(` i am ${me}`)
