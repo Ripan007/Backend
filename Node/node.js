@@ -29,4 +29,6 @@ console.log(random)
 const me = superheroes[0]
 console.log(` i am ${me}`)
 
+* *********** QR code generator *************
+
 **/
