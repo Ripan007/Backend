@@ -34,6 +34,7 @@ console.log(` i am ${me}`)
 **/
 
 import inquirer from 'inquirer'
+import qr from 'qr-image'
 
 inquirer
   .prompt([
@@ -45,7 +46,8 @@ inquirer
   ])
   .then((answers) => {
     const url = answers.URL
-
+    var qr_svg = qr.image('I love QR!', { type: 'svg' })
+    qr_svg.pipe(require('fs').createWriteStream('i_love_qr.svg'))
     // Use user feedback for... whatever!!
   })
   .catch((error) => {
