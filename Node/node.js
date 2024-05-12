@@ -1,6 +1,6 @@
 // node => an asynchronous event-driven javascript runtime ,  node js  is designed to build scalable network applications
 
-/*
+/**
  create file
 const fs = require('fs')
 fs.writeFile('message.txt', 'hello node js', (err) => {
@@ -15,9 +15,9 @@ fs.readFile('./message.txt', 'utf8', (err, data) => {
   console.log(`show the data : ${data}`)
 })
 
-//*    using npm package
+*    using npm package
 
-*/
+**/
 
 const generateName = require('sillyname')
 const sillyname = generateName()
