@@ -38,13 +38,13 @@ import inquirer from 'inquirer'
 inquirer
   .prompt([
     {
-      message: 'this is your url: ',
-      name: 'url',
+      message: 'this is your URL: ',
+      name: 'URL',
     },
     /* Pass your questions in here */
   ])
   .then((answers) => {
-    console.log(answers)
+    const url = answers.URL
 
     // Use user feedback for... whatever!!
   })
