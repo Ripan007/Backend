@@ -20,12 +20,13 @@ fs.readFile('./message.txt', 'utf8', (err, data) => {
 const generateName = require('sillyname')
 const sillyname = generateName()
 console.log(sillyname)
-
-
-**/
-
-// import superheroes from 'superheroes'
+* * superheroes package
+import superheroes from 'superheroes'
 import { randomSuperhero } from 'superheroes'
+const random = randomSuperhero()
+console.log(random)
 
 const me = superheroes[0]
 console.log(` i am ${me}`)
+
+**/
