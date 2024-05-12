@@ -35,7 +35,7 @@ console.log(` i am ${me}`)
 
 import inquirer from 'inquirer'
 import qr from 'qr-image'
-
+import fs from 'fs'
 inquirer
   .prompt([
     {
