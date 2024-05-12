@@ -23,3 +23,6 @@ console.log(sillyname)
 
 
 **/
+
+import superheroes from 'superheroes'
+console.log(superheroes)
