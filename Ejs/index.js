@@ -19,7 +19,13 @@ app.get('/', (req, res) => {
   })
 })*/
 
-app.get('/', (req, res) => {})
+app.get('/', (req, res) => {
+  const data = {
+    title: '',
+    seconds: '',
+    items: '',
+  }
+})
 
 app.listen(port, () => {
   console.log(`server is running at ${port}`)
