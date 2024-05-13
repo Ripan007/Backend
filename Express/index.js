@@ -73,8 +73,7 @@ app.use(passwordCheck)
 app.get('/', (req, res) => {
   req.sendFile(__dirname + 'public/index.html')
 })
+app.post('/check', (req, res) => {})
 app.listen(port, () => {
   console.log(`server is running at ${port}`)
 })
-
-// programming is not about memorization ,is about figure out about problem solution
