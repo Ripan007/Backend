@@ -8,7 +8,7 @@ const app = express()
 const port = 3000
 let brandName = ''
 
-app.use(express.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }))
 function brandNameGenerator(req, res, next) {
   console.log(req.body)
   brandName = req.body['street'] + req.body['pet']
