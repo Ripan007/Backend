@@ -12,16 +12,16 @@ const port = 3000
 app.get('/', (req, res) => {
   res.send('<h1> home page<h1/>')
 })
-app.post('/register/rahul', (req, res) => {
+app.post('/register', (req, res) => {
   res.sendStatus(201)
 })
-app.put('/register/rahul', (req, res) => {
+app.put('/user/rahul', (req, res) => {
   res.sendStatus(200)
 })
-app.patch('/register/rahul', (req, res) => {
+app.patch('/user/rahul', (req, res) => {
   res.sendStatus(200)
 })
-app.delete('/register/rahul', (req, res) => {
+app.delete('/user/rahul', (req, res) => {
   res.sendStatus(200)
 })
 app.listen(port, () => {
