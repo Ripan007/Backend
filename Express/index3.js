@@ -6,12 +6,12 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const app = express()
 const port = 3000
-const brandName = ''
+let brandName = ''
 
 app.use(express.urlencoded({ extended: true }))
 function brandNameGenerator(req, res, next) {
   console.log(req.body)
-  bandName = req.body['street'] + req.body['pet']
+  brandName = req.body['street'] + req.body['pet']
   next()
 }
 
