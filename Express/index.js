@@ -71,13 +71,13 @@ function passwordCheck(req, res, next) {
 }
 app.use(passwordCheck)
 app.get('/', (req, res) => {
-  req.sendFile(__dirname + 'public/index.html')
+  res.sendFile(__dirname + 'public/index.html')
 })
 app.post('/check', (req, res) => {
   if (userIsAuthorised) {
-    res.sendFile(__dirname + 'public/index.html')
+    res.sendFile(__dirname + '/public/index.html')
   } else {
-    res.sendFile(__dirname + 'public/index.html')
+    res.sendFile(__dirname + '/Public/index.html')
   }
 })
 app.listen(port, () => {
