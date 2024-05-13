@@ -11,8 +11,9 @@
 
     <%= if(seconds % 2===0){%>
     <ul>
+      <%items.foreEach((fruit)=>{
       <li><%= fruit %></li>
-      <% }
+      }) > <% }
     </ul>
 
     <p></p>
