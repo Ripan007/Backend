@@ -36,7 +36,7 @@ const port = 3000
 
 app.get('/', (req, res) => {
   console.log(__dirname + '/public/index.html')
-  res.sendFile(__dirname + 'index.html')
+  res.sendFile(__dirname + '/public/index.html')
 })
 
 app.listen(port, () => {
