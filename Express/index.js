@@ -12,14 +12,17 @@ const port = 3000
 app.get('/', (req, res) => {
   res.send('<h1> home page<h1/>')
 })
-app.post('/register', (req, res) => {
+app.post('/register/rahul', (req, res) => {
   res.sendStatus(201)
 })
-app.put('/register', (req, res) => {
-  res.sendStatus(201)
+app.put('/register/rahul', (req, res) => {
+  res.sendStatus(200)
 })
-app.patch('/register', (req, res) => {
-  res.sendStatus(201)
+app.patch('/register/rahul', (req, res) => {
+  res.sendStatus(200)
+})
+app.delete('/register/rahul', (req, res) => {
+  res.sendStatus(200)
 })
 app.listen(port, () => {
   console.log(`server running on port ${port}`)
