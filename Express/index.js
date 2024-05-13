@@ -13,7 +13,13 @@ app.get('/', (req, res) => {
   res.send('<h1> home page<h1/>')
 })
 app.post('/register', (req, res) => {
-  res.sendSr
+  res.sendStatus(201)
+})
+app.put('/register', (req, res) => {
+  res.sendStatus(201)
+})
+app.patch('/register', (req, res) => {
+  res.sendStatus(201)
 })
 app.listen(port, () => {
   console.log(`server running on port ${port}`)
