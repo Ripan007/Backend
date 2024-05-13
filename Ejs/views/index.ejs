@@ -8,7 +8,13 @@
   <body>
     <h1><%= title %></h1>
     <p>current second: <%= seconds %></p>
-    <ul></ul>
+
+    <%= if(seconds % 2===0){%>
+    <ul>
+      <li><%= fruit %></li>
+      <% }
+    </ul>
+
     <p></p>
   </body>
 </html>
