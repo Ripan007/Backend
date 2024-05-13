@@ -69,12 +69,12 @@ function passwordCheck(req, res, next) {
   }
   next()
 }
-
+app.use(passwordCheck)
 app.get('/', (req, res) => {
   req.sendFile(__dirname + 'public/index.html')
 })
-
-app.use(check)
 app.listen(port, () => {
   console.log(`server is running at ${port}`)
 })
+
+// programming is not about memorization ,is about figure out about problem solution
