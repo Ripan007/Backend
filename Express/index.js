@@ -71,7 +71,6 @@ function passwordCheck(req, res, next) {
 }
 app.use(passwordCheck)
 app.get('/', (req, res) => {
-  console.log(__dirname + 'public/index.html')
   res.sendFile(__dirname + 'public/index.html')
 })
 app.post('/check', (req, res) => {
