@@ -34,8 +34,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const app = express()
 const port = 3000
 
-app.get('/submit', (req, res) => {
-  console.log(__dirname + 'index.html')
+app.get('/', (req, res) => {
+  console.log(__dirname + '/index.html')
   res.sendFile(__dirname + 'index.html')
 })
 
