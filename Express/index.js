@@ -73,7 +73,13 @@ app.use(passwordCheck)
 app.get('/', (req, res) => {
   req.sendFile(__dirname + 'public/index.html')
 })
-app.post('/check', (req, res) => {})
+app.post('/check', (req, res) => {
+  if (userIsAuthorised) {
+    res.sendFile(__dirname + 'public/index.html')
+  } else {
+    res.sendFile(__dirname + 'public/index.html')
+  }
+})
 app.listen(port, () => {
   console.log(`server is running at ${port}`)
 })
