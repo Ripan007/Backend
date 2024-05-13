@@ -21,11 +21,12 @@ app.get('/', (req, res) => {
 
 app.get('/', (req, res) => {
   const data = {
-    title: '',
-    seconds: '',
-    items: '',
-    htnlContent: '',
+    title: 'ejs tags',
+    seconds: new Date().getSeconds(),
+    items: ['apple', 'banana', 'cherry'],
+    htmlContent: '<strong>this is some strong text</strong>',
   }
+  res.render('index.ejs', data)
 })
 
 app.listen(port, () => {
