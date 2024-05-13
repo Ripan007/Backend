@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
   res.send('<h1> home page<h1/>')
 })
 app.post('/register', (req, res) => {
-  res.send('<h2> contact page<h2/> ')
+  res.sendSr
 })
 app.listen(port, () => {
   console.log(`server running on port ${port}`)
