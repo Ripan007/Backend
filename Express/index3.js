@@ -15,12 +15,14 @@ function brandNameGenerator(req, res, next) {
   next()
 }
 
+app.use(brandNameGenerator)
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html')
 })
 
-app.post('submit', (req, res) => {
-  console.log(req.body)
+app.post('/submit', (req, res) => {
+  res.send(`<h1>your band name is :<h1/> <h2>${bandName}</h2>`)
 })
 app.listen(port, () => {
   console.log(`listening on ${port}`)
