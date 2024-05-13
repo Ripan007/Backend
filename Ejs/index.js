@@ -3,9 +3,18 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
+  const today = new Date()
+  const day = today.getDay()
+
+  let type = 'a weekday'
+  let adv = 'its time to work harder'
+  if (day === 0 || day === 6) {
+    type = 'the weekend'
+    adv = 'its time to have some  fun'
+  }
   res.render('index.ejs', {
-    dayType: 'a weekday',
-    advice: 'it is time to  work harder',
+    dayType: type,
+    advice: adv,
   })
 })
 app.listen(port, () => {
