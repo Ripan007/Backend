@@ -9,7 +9,7 @@
     <h1><%= title %></h1>
     <p>current second: <%= seconds %></p>
 
-    <%= if(seconds % 2===0){%>
+    <% if(seconds % 2===0){%>
     <ul>
       <%items.foreEach((fruit)=>{ %>
       <li><%= fruit %></li>
