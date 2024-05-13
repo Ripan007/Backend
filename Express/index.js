@@ -35,7 +35,7 @@ const app = express()
 const port = 3000
 
 app.get('/submit', (req, res) => {
-  console.log('show  this line', __dirname + 'index.html')
+  console.log(__dirname + 'index.html')
   res.sendFile(__dirname + 'public/index.html')
 })
 
