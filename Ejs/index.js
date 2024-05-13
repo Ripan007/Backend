@@ -24,6 +24,7 @@ app.get('/', (req, res) => {
     title: '',
     seconds: '',
     items: '',
+    htnlContent: '',
   }
 })
 
