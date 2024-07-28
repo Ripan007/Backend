@@ -1,0 +1,35 @@
+
+h1{
+  text-transform: capitalize;
+
+}
+
+main{
+  width:300px;
+  background-color: blueviolet;
+  padding: 40px;
+  margin:50px
+}
+form{
+  display: flex;
+  flex-direction: column;
+gap:10px
+}
+
+input{
+padding:10px;
+border-radius: 10px;
+
+}
+
+button{
+  padding:10px;
+border-radius: 10px;
+background-color: beige;
+color:'#fff';
+
+
+
+
+}
+
